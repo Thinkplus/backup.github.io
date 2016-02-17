@@ -1,198 +1,164 @@
-﻿
-<!DOCTYPE html>
-<html lang="en">
+﻿<!doctype html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <title>Thinkplus</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-responsive.min.css">
+    <title>Hello thinkplus world!</title>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootflat.github.io/bootflat/css/bootflat.css">
+    <link rel="stylesheet" type="text/css" href="/Content/jquery.fullPage.css" />
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <!-- Le styles -->
-    <link href="../assets/css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-        body {
-            padding-top: 20px;
-            padding-bottom: 60px;
+    <style>
+        /* Sections
+             * --------------------------------------- */
+        #section0 img,
+        #section1 img {
+            margin: 20px 0 0 0;
         }
 
-        /* Custom container */
-        .container {
+        #section2 img {
+            margin: 20px 0 0 52px;
+        }
+
+        #section3 img {
+            bottom: 0px;
+            position: absolute;
+            margin-left: -420px;
+        }
+
+        .intro p {
+            width: 50%;
             margin: 0 auto;
-            max-width: 1000px;
+            font-size: 1.5em;
         }
 
-            .container > hr {
-                margin: 60px 0;
-            }
-
-        /* Main marketing message and sign up button */
-        .jumbotron {
-            margin: 80px 0;
-            text-align: center;
+        .twitter-share-button {
+            position: absolute;
+            z-index: 99;
+            right: 149px;
+            top: 9px;
         }
-
-            .jumbotron h1 {
-                font-size: 100px;
-                line-height: 1;
-            }
-
-            .jumbotron .lead {
-                font-size: 24px;
-                line-height: 1.25;
-            }
-
-            .jumbotron .btn {
-                font-size: 21px;
-                padding: 14px 24px;
-            }
-
-        /* Supporting marketing content */
-        .marketing {
-            margin: 60px 0;
-        }
-
-            .marketing p + h4 {
-                margin-top: 28px;
-            }
-
-
-        /* Customize the navbar links to be fill the entire space of the .navbar */
-        .navbar .navbar-inner {
-            padding: 0;
-        }
-
-        .navbar .nav {
-            margin: 0;
-            display: table;
-            width: 100%;
-        }
-
-            .navbar .nav li {
-                display: table-cell;
-                width: 1%;
-                float: none;
-            }
-
-                .navbar .nav li a {
-                    font-weight: bold;
-                    text-align: center;
-                    border-left: 1px solid rgba(255,255,255,.75);
-                    border-right: 1px solid rgba(0,0,0,.1);
-                }
-
-                .navbar .nav li:first-child a {
-                    border-left: 0;
-                    border-radius: 3px 0 0 3px;
-                }
-
-                .navbar .nav li:last-child a {
-                    border-right: 0;
-                    border-radius: 0 3px 3px 0;
-                }
     </style>
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/html5shiv.js"></script>
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
     <![endif]-->
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="../assets/ico/favicon.png">
 
-</head>
-<body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-    <div class="container">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                menu: '#menu',
+                scrollingSpeed: 1000
+            });
 
-        <div class="masthead">
-            <h3 class="muted">Project name</h3>
-            <div class="navbar">
-                <div class="navbar-inner">
-                    <div class="container">
-                        <ul class="nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Downloads</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div><!-- /.navbar -->
-        </div>
-
-        <!-- Jumbotron -->
-        <div class="jumbotron">
-            <h1>Marketing stuff!</h1>
-            <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <a class="btn btn-large btn-success" href="#">Get started today</a>
-        </div>
-
-        <hr>
-
-        <!-- Example row of columns -->
-        <div class="row-fluid">
-            <div class="span4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div>
-            <div class="span4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div>
-            <div class="span4">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-                <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="footer">
-            <p>&copy; Company 2013</p>
-        </div>
-
-    </div><!-- /.container -->
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap-transition.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap-alert.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap-modal.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap-dropdown.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap-scrollspy.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap-tab.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap-tooltip.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap-popover.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap-button.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap-collapse.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap-carousel.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap-typeahead.js"></script>
-    <script>
-        !function ($) {
-            $(function () {
-                // carousel demo
-                $('#myCarousel').carousel()
-            })
-        }(window.jQuery)
+        });
     </script>
-    <script src="../assets/js/holder/holder.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-custom" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">thinkplus</a>
+            </div>
+            <div class="collapse navbar-collapse">
+
+
+                <ul id="menu" class="nav navbar-nav navbar-right">
+                    <li data-menuanchor="firstPage"><a class="nav-link" href="#firstPage">First slide</a></li>
+                    <li data-menuanchor="secondPage"><a class="nav-link" href="#secondPage">Second slide</a></li>
+                    <li data-menuanchor="3rdPage"><a class="nav-link" href="#3rdPage">Third slide</a></li>
+                    <li data-menuanchor="4thpage"><a class="nav-link" href="#4thpage">Fourth slide</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="fullpage">
+        <div class="section " id="section0">
+            <h1>fullPage.js</h1>
+            <p>Create Beautiful Fullscreen Scrolling Websites</p>
+            <img src="imgs/fullPage.png" alt="fullPage" />
+        </div>
+        <div class="section" id="section1">
+            <div class="slide">
+                <div class="intro">
+                    <h1>Create Sliders</h1>
+                    <p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>
+                    <img src="imgs/slider.png" alt="slider" />
+                </div>
+
+            </div>
+            <div class="slide">
+                <div class="intro">
+                    <img src="imgs/1.png" alt="simple" />
+                    <h1>Simple</h1>
+                    <p>Easy to use. Configurable and customizable.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="intro">
+                    <img src="imgs/2.png" alt="Cool" />
+                    <h1>Cool</h1>
+                    <p>It just looks cool. Impress everybody with a simple and modern web design!</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="intro">
+                    <img src="imgs/3.png" alt="Compatible" />
+                    <h1>Compatible</h1>
+                    <p>Working in modern and old browsers too! IE 8 users don't have the fault of using that horrible browser! Lets give them a chance to see your site in a proper way!</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="intro">
+                <h1>Example</h1>
+                <p>HTML markup example to define 4 sections.</p>
+                <img src="imgs/example2.png" alt="example" />
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <div class="intro">
+                <h1>Working On Tablets</h1>
+                <p>
+                    Designed to fit to different screen sizes as well as tablet and mobile devices.
+                    <br /><br /><br /><br /><br /><br />
+                </p>
+            </div>
+            <img src="imgs/tablets.png" alt="tablets" />
+        </div>
+    </div>
+
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+    <!-- Bootflat's JS files.-->
+    <script src="https://bootflat.github.io/bootflat/js/icheck.min.js"></script>
+    <script src="https://bootflat.github.io/bootflat/js/jquery.fs.selecter.min.js"></script>
+    <script src="https://bootflat.github.io/bootflat/js/jquery.fs.stepper.min.js"></script>
+
+    <!--FullpageJs's JS Files-->
+    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+    <script src="/Scripts/vendors/jquery.easings.min.js"></script>
+    <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+    <script type="text/javascript" src="/Scripts/vendors/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery.fullPage.js"></script>
+
+
 </body>
 </html>
